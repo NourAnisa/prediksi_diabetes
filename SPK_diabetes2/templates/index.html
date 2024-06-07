@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Diabetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 700px;
+            width: 100%;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .gejala {
+            margin-bottom: 20px;
+        }
+        .gejala p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediksi Diabetes</h1>
+        <form action="/result" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="usia">Usia:</label>
+            <input type="text" id="usia" name="usia" required>
+
+            <h3>Gejala:</h3>
+
+            <div class="gejala">
+                <label for="frekuensi_buang_air_kecil">
+                    <input type="checkbox" id="frekuensi_buang_air_kecil" name="frekuensi_buang_air_kecil">
+                    Frekuensi buang air kecil
+                </label>
+                <p>Karena sel-sel di tubuh tidak dapat menyerap glukosa, ginjal mencoba mengeluarkan glukosa sebanyak mungkin, menyebabkan sering buang air kecil.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="rasa_haus">
+                    <input type="checkbox" id="rasa_haus" name="rasa_haus">
+                    Rasa haus berlebihan
+                </label>
+                <p>Dengan hilangnya air dari tubuh karena sering buang air kecil, penderita merasa haus dan membutuhkan banyak air.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="kulit_mulut_kering">
+                    <input type="checkbox" id="kulit_mulut_kering" name="kulit_mulut_kering">
+                    Kulit dan mulut kering
+                </label>
+                <p>Diabetes bisa menyebabkan kerusakan pembuluh darah sehingga membuat kulit dan mulut kering.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="penurunan_berat_badan">
+                    <input type="checkbox" id="penurunan_berat_badan" name="penurunan_berat_badan">
+                    Penurunan berat badan
+                </label>
+                <p>Kadar gula darah yang tinggi menyebabkan penurunan berat badan yang cepat karena tubuh memecah protein dari otot sebagai sumber alternatif energi.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="kelelahan">
+                    <input type="checkbox" id="kelelahan" name="kelelahan">
+                    Kelelahan
+                </label>
+                <p>Kadar gula darah yang tinggi mengganggu kemampuan tubuh mengubah glukosa menjadi energi, menyebabkan kelelahan.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="penglihatan_buram">
+                    <input type="checkbox" id="penglihatan_buram" name="penglihatan_buram">
+                    Penglihatan buram
+                </label>
+                <p>Kadar gula darah yang tinggi menyebabkan penumpukan glukosa di dalam tubuh yang dapat menyebabkan penglihatan menurun.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="gatal_alat_kelamin">
+                    <input type="checkbox" id="gatal_alat_kelamin" name="gatal_alat_kelamin">
+                    Gatal di sekitar alat kelamin
+                </label>
+                <p>Kadar gula darah yang tinggi menyebabkan infeksi jamur yang menyebabkan gatal di sekitar alat kelamin.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="penyembuhan_luka_lambat">
+                    <input type="checkbox" id="penyembuhan_luka_lambat" name="penyembuhan_luka_lambat">
+                    Penyembuhan luka yang lambat
+                </label>
+                <p>Diabetes mengurangi efisiensi sel penyembuh luka sehingga luka membutuhkan waktu lebih lama untuk sembuh.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="mata_kering">
+                    <input type="checkbox" id="mata_kering" name="mata_kering">
+                    Mata kering
+                </label>
+                <p>Kadar gula darah yang tinggi secara kronis dapat menyebabkan kerusakan saraf pada saraf halus yang menopang struktur mata.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="kelaparan">
+                    <input type="checkbox" id="kelaparan" name="kelaparan">
+                    Kelaparan
+                </label>
+                <p>Rasa lapar yang berlebihan terjadi karena tubuh mengira belum diberi makan dan lebih menginginkan glukosa yang dibutuhkan sel.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="kulit_bermasalah">
+                    <input type="checkbox" id="kulit_bermasalah" name="kulit_bermasalah">
+                    Kulit jadi bermasalah
+                </label>
+                <p>Kulit gatal atau gelap di sekitar leher atau ketiak bisa menjadi tanda peringatan diabetes.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="infeksi_jamur">
+                    <input type="checkbox" id="infeksi_jamur" name="infeksi_jamur">
+                    Infeksi jamur
+                </label>
+                <p>Diabetes menyebabkan kerentanan terhadap infeksi jamur karena kadar gula darah yang tinggi.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="iritasi_genital">
+                    <input type="checkbox" id="iritasi_genital" name="iritasi_genital">
+                    Iritasi genital
+                </label>
+                <p>Kandungan glukosa yang tinggi dalam urin menyebabkan iritasi di daerah genital.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="mudah_tersinggung">
+                    <input type="checkbox" id="mudah_tersinggung" name="mudah_tersinggung">
+                    Keletihan dan mudah tersinggung
+                </label>
+                <p>Bangun di malam hari untuk buang air kecil menyebabkan kelelahan dan mudah tersinggung pada penderita diabetes.</p>
+            </div>
+
+            <div class="gejala">
+                <label for="kesemutan">
+                    <input type="checkbox" id="kesemutan" name="kesemutan">
+                    Kesemutan atau mati rasa
+                </label>
+                <p>Kesemutan atau mati rasa di tangan dan kaki adalah tanda kerusakan saraf akibat diabetes.</p>
+            </div>
+
+            <input type="submit" value="Prediksi">
+        </form>
+    </div>
+</body>
+</html>
