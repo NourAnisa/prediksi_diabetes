@@ -1,0 +1,12 @@
+Flask==2.1.2
+pandas==1.4.2
+google-play-scraper==1.2.1
+matplotlib==3.5.2
+wordcloud==1.8.1
+scikit-learn==1.1.1
+xgboost==1.6.1
+nltk==3.7
+emoji==1.7.0
+transformers==4.19.4
+seaborn==0.11.2
+sqlite3==3.36.0
